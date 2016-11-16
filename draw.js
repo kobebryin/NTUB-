@@ -10,7 +10,7 @@ d3.csv(dataFile, function(data) {
 	var hshift = -100;
 	var maxy = d3.max(data, function(d) { return d.Open; });
 	var ln = data.length;
-	var ctrl  = d3.select("body").append("svg").attr("width", width).attr("height", height);
+	var ctrl  = d3.select("featured").append("svg").attr("width", width).attr("height", height);
 	linesO = d3.line().
 	x(function(d,i){ return i * (width/ln); }).
 	y(function(d){ return d.Open * (height/maxy) + hshift; });

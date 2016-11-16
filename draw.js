@@ -1,8 +1,7 @@
 function draw() {
-dataFile = "https://kobebryin.github.io/NTUB-/table.csv";
 var width  = 1024;
 var height = 800; 
-d3.csv(dataFile, function(data) {
+d3.csv("https://kobebryin.github.io/NTUB-/table.csv", function(data) {
 	console.log(data);
 	data.forEach(function(d) {
 		console.log(d.Open);
